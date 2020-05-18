@@ -1,0 +1,135 @@
+Q1) Suppose that you have a collection containing the following documents:
+Note: all words are lower cased, no stemming is applied, no stop words removal
+Doc 1: “IR concerns the retrieval of relevant information”
+Doc 2: “the activity of obtaining resources relevant to an information need is
+information retrieval”
+If we build the positional index for this collection in the format:
+Term: docId:<position_1, position2>
+• Show the positional index for the words: information, and for retrieval
+• For the following queries, return the all documents and the
+corresponding positions that meet query condition
+Query 1: "information retrieval"
+ Query 2: "relevant /3 information"
+Help: word1 /k word2” (k is a positive integer) retrieves the occurrences of
+word1 within k words of word2 on either side
+Q2) Write code in any language of your preference (just make your code clear and well
+documented) to achieve the following: allow reading a file, make it optional to remove
+stopwords; a boolean flag, if true remove stop words from the file. The output is
+positional index written in a file(name it index). Each time you get a new document you
+append to index file
+Q3) permuterm index
+• Build the permuterm index for the following terms: man, moon, and moron?
+• Which terms from the above would be returned as candidate for the query ma*n
+Q4) Compute the levenshtein edit distance between “poems” and these two words
+“apfel”, appel
+Q5) We studied several algorithms for constructing (creating/generating) an index of a
+given collection, e.g., the block sort-based indexing (BSBI) algorithm, the single pass
+in-memory indexing (SPIMI) algorithm, and the dynamic indexing
+• What is the advantage of using termID instead of terms in BSBI?
+• Which limitation of BSBI does SPIMI address?
+• In which cases do we need dynamic indexing?
+• In which constraint (hardware) it is better to use BSBI?
+Q1) Suppose that you have a collection containing the following documents:
+Note: all words are lower cased, no stemming is applied, no stop words removal
+Doc 1: “IR concerns the retrieval of relevant information”
+Doc 2: “the activity of obtaining resources relevant to an information need is
+information retrieval”
+If we build the positional index for this collection in the format:
+Term: docId:<position_1, position2>
+• Show the positional index for the words: information, and for retrieval
+• For the following queries, return the all documents and the
+corresponding positions that meet query condition
+Query 1: "information retrieval"
+Query 2: "relevant /3 information"
+Help: word1 /k word2” (k is a positive integer) retrieves the occurrences of
+word1 within k words of word2 on either side
+Q2) Write code in any language of your preference (just make your code clear and well
+documented) to achieve the following: allow reading a file, make it optional to remove
+stopwords; a boolean flag, if true remove stop words from the file. The output is
+positional index written in a file(name it index). Each time you get a new document you
+append to index file
+Q3) permuterm index
+• Build the permuterm index for the following terms: man, moon, and moron?
+• Which terms from the above would be returned as candidate for the query ma*n
+Q4) Compute the levenshtein edit distance between “poems” and these two words
+“apfel”, appel
+Q5) We studied several algorithms for constructing (creating/generating) an index of a
+given collection, e.g., the block sort-based indexing (BSBI) algorithm, the single pass
+in-memory indexing (SPIMI) algorithm, and the dynamic indexing
+• What is the advantage of using termID instead of terms in BSBI?
+• Which limitation of BSBI does SPIMI address?
+• In which cases do we need dynamic indexing?
+• In which constraint (hardware) it is better to use BSBI?
+Q1) Suppose that you have a collection containing the following documents:
+Note: all words are lower cased, no stemming is applied, no stop words removal
+Doc 1: “IR concerns the retrieval of relevant information”
+Doc 2: “the activity of obtaining resources relevant to an information need is
+information retrieval”
+If we build the positional index for this collection in the format:
+Term: docId:<position_1, position2>
+• Show the positional index for the words: information, and for retrieval
+• For the following queries, return the all documents and the
+corresponding positions that meet query condition
+Query 1: "information retrieval"
+ Query 2: "relevant /3 information"
+Help: word1 /k word2” (k is a positive integer) retrieves the occurrences of
+word1 within k words of word2 on either side
+Q2) Write code in any language of your preference (just make your code clear and well
+documented) to achieve the following: allow reading a file, make it optional to remove
+stopwords; a boolean flag, if true remove stop words from the file. The output is
+positional index written in a file(name it index). Each time you get a new document you
+append to index file
+Q3) permuterm index
+• Build the permuterm index for the following terms: man, moon, and moron?
+• Which terms from the above would be returned as candidate for the query ma*n
+Q4) Compute the levenshtein edit distance between “poems” and these two words
+“apfel”, appel
+Q5) We studied several algorithms for constructing (creating/generating) an index of a
+given collection, e.g., the block sort-based indexing (BSBI) algorithm, the single pass
+in-memory indexing (SPIMI) algorithm, and the dynamic indexing
+• What is the advantage of using termID instead of terms in BSBI?
+• Which limitation of BSBI does SPIMI address?
+• In which cases do we need dynamic indexing?
+• In which constraint (hardware) it is better to use BSBI?
+Q1) Suppose that you have a collection containing the following documents:
+Note: all words are lower cased, no stemming is applied, no stop words removal
+Doc 1: “IR concerns the retrieval of relevant information”
+Doc 2: “the activity of obtaining resources relevant to an information need is
+information retrieval”
+If we build the positional index for this collection in the format:
+Term: docId:<position_1, position2>
+• Show the positional index for the words: information, and for retrieval
+• For the following queries, return the all documents and the
+corresponding positions that meet query condition
+Query 1: "information retrieval"
+ Query 2: "relevant /3 information"
+Help: word1 /k word2” (k is a positive integer) retrieves the occurrences of
+word1 within k words of word2 on either side
+Q2) Write code in any language of your preference (just make your code clear and well
+documented) to achieve the following: allow reading a file, make it optional to remove
+stopwords; a boolean flag, if true remove stop words from the file. The output is
+positional index written in a file(name it index). Each time you get a new document you
+append to index file
+Q3) permuterm index
+• Build the permuterm index for the following terms: man, moon, and moron?
+• Which terms from the above would be returned as candidate for the query ma*n
+Q4) Compute the levenshtein edit distance between “poems” and these two words
+“apfel”, appel
+Q5) We studied several algorithms for constructing (creating/generating) an index of a
+given collection, e.g., the block sort-based indexing (BSBI) algorithm, the single pass
+in-memory indexing (SPIMI) algorithm, and the dynamic indexing
+• What is the advantage of using termID instead of terms in BSBI?
+• Which limitation of BSBI does SPIMI address?
+• In which cases do we need dynamic indexing?
+• In which constraint (hardware) it is better to use BSBI?
+stuff
+stuffstuff
+stuffstuff
+stuffstuffstuffstuffstuffstuff_ stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff
+
+
+
+
+
+
+
