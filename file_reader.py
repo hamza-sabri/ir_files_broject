@@ -54,8 +54,11 @@ class FileReader(object):
 
     # Add the word for the index_map object depending on it's own case the cases are explained in the method
     def add_to_index_map(self, word):
-
-        # If the word does not exist in the map at all
+        # removing the punctuation marks from the word
+        word = self.remove_punctuation_marks(word)
+        if word == '':
+            return
+            # If the word does not exist in the map at all
         if not (word in self.index_map):
             self.index_map[word] = PositionalIndex()
             self.index_map[word].set_word(word)
@@ -74,3 +77,34 @@ class FileReader(object):
             self.index_map[word].increment_occurrence_times()
             current_map = self.index_map[word].get_positions_map()
             current_map[self.doc_id] = [self.position]
+
+    # remove all unnecessary things from the word
+    @staticmethod
+    def remove_punctuation_marks(word):
+        fixed_word = word
+        fixed_word = fixed_word.replace(',', '')
+        fixed_word = fixed_word.replace('\'', '')
+        fixed_word = fixed_word.replace(':', '')
+        fixed_word = fixed_word.replace(';', '')
+        fixed_word = fixed_word.replace('.', '')
+        fixed_word = fixed_word.replace('!', '')
+        fixed_word = fixed_word.replace('?', '')
+        fixed_word = fixed_word.replace('.', '')
+        fixed_word = fixed_word.replace(' ', '')
+        fixed_word = fixed_word.replace('/', '')
+        fixed_word = fixed_word.replace('\\', '')
+        fixed_word = fixed_word.replace('*', '')
+        fixed_word = fixed_word.replace('(', '')
+        fixed_word = fixed_word.replace(')', '')
+        fixed_word = fixed_word.replace('#', '')
+        fixed_word = fixed_word.replace('$', '')
+        fixed_word = fixed_word.replace('%', '')
+        fixed_word = fixed_word.replace('^', '')
+        fixed_word = fixed_word.replace('&', '')
+        fixed_word = fixed_word.replace('•', '')
+        fixed_word = fixed_word.replace('”', '')
+        fixed_word = fixed_word.replace('“', '')
+        fixed_word = fixed_word.replace('"', '')
+        for i in range(10):
+            fixed_word = fixed_word.replace(str(i), '')
+        return fixed_word.lower()
