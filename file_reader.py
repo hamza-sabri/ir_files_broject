@@ -1,6 +1,7 @@
 # Importing some important libraries
 from nltk.corpus import stopwords
 from custom_map import PositionalIndex
+from nltk.stem import PorterStemmer
 
 
 # This class is built to read the given document and add it to the index_map object no more!!!
@@ -14,8 +15,11 @@ class FileReader(object):
         self.should_remove = should_remove
         self.index_map = index_map
         self.position = -1
+        # Initialize the stemmer.
+        self.stemmer = PorterStemmer()
 
-    # Calling the helper method "start_reading"
+        # Calling the helper method "start_reading"
+
     def file_reader(self):
         self.more_removable_words()
         self.start_reading()
@@ -79,8 +83,7 @@ class FileReader(object):
             current_map[self.doc_id] = [self.position]
 
     # remove all unnecessary things from the word
-    @staticmethod
-    def remove_punctuation_marks(word):
+    def remove_punctuation_marks(self, word):
         fixed_word = word
         fixed_word = fixed_word.replace(',', '')
         fixed_word = fixed_word.replace('\'', '')
@@ -107,4 +110,4 @@ class FileReader(object):
         fixed_word = fixed_word.replace('"', '')
         for i in range(10):
             fixed_word = fixed_word.replace(str(i), '')
-        return fixed_word.lower()
+        return self.stemmer.stem(fixed_word.lower())
