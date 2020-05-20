@@ -30,6 +30,7 @@ class FileReader(object):
         self.removable_words.add('Then')
         self.removable_words.add('that')
         self.removable_words.add('That')
+        self.removable_words.add(' ')
         # we can add as much as we want that's my point
         pass
 
